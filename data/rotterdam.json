@@ -1,102 +1,194 @@
 {
-  "cityId": "rotterdam",
-  "version": 1,
   "steps": {
     "ru": [
       {
-        "title": "Станция Rotterdam Blaak",
-        "address": "Stationsplein, 3013 Rotterdam",
-        "task": "Найдите информационный стенд или вывеску с названием станции",
-        "riddle": "«Я — вход в современный Роттердам. Моё имя — название цвета? Введи его.»",
-        "correct": ["blaak"],
-        "nextTask": "Выйдите из станции и встаньте лицом к Марктхалу — большому зданию в форме подковы."
-      },
-      {
-        "title": "Марктхал (Крытый рынок)",
-        "address": "Dominee Jan Scharpstraat 298, 3011 GZ Rotterdam",
-        "task": "Рассмотрите огромную фреску на потолке. Какие фрукты там изображены? (подсказка: цитрус)",
-        "riddle": "«Огромный потолок — это холст. Какой фрукт там висит, словно солнце?»",
-        "correct": ["апельсины","orange"],
-        "nextTask": "Повернитесь направо — вы увидите жёлтые Кубические дома."
+        "title": "Erasmus Bridge (Эразмусбрюг)",
+        "address": "Erasmusbrug, 3011 Rotterdam",
+        "riddle": "Меня называют лебедем, я парю над водой, соединяя берега. Кто я?",
+        "correct": ["эразмусбрюг", "erasmusbrug", "мост эразмуса"],
+        "task": "Посчитайте, сколько тросов держат мост.",
+        "nextTask": "Идите к Кубическим домам."
       },
       {
         "title": "Кубические дома (Cube Houses)",
-        "address": "Overblaak 70, 3011 MH Rotterdam",
-        "task": "Посчитайте, сколько кубов вы видите в одном ряду?",
-        "riddle": "«Жёлтые кубики, словно деревья в лесу. Сколько их в одном ряду? Введи число»",
-        "correct": ["6","шесть"],
-        "nextTask": "Пройдите под «аркой» из кубов и выйдите к Старой гавани (Oude Haven)."
+        "address": "Overblaak 70, 3012 Rotterdam",
+        "riddle": "Я — лес деревянных пирамид, где люди живут вверх ногами. Что это?",
+        "correct": ["кубические дома", "cube houses", "bblaak"],
+        "task": "Найдите вход в самый низкий дом и сфотографируйтесь рядом.",
+        "nextTask": "Перейдите к рынку Марктхал."
       },
       {
-        "title": "Старая гавань (Oude Haven) и Белый дом",
-        "address": "Geldersekade, 3011 WB Rotterdam",
-        "task": "Найдите самое высокое старое здание в гавани. Какого оно цвета?",
-        "riddle": "«Он пережил бомбёжку, стоит белый и гордый. Что это?»",
-        "correct": ["белый дом","witte huis"],
-        "nextTask": "Идите вдоль набережной к Эразмусбрюг — мосту-лебедю."
+        "title": "Markthal (Рынок)",
+        "address": "Dominee Jan Scharpstraat 298, 3011 Rotterdam",
+        "riddle": "Я — огромная арка с фруктами и цветами на потолке. Снаружи — серый камень, внутри — яркая радуга. Что я?",
+        "correct": ["markthal", "марктхал", "рынок"],
+        "task": "Найдите самый большой натюрморт на потолке и опишите его.",
+        "nextTask": "Направляйтесь к Белому дому."
       },
       {
-        "title": "Мост Эразма (Erasmusbrug)",
-        "address": "Erasmusbrug, 3011 BN Rotterdam",
-        "task": "Какую форму имеет пилон (опора) этого моста?",
-        "riddle": "«Над Маасом изогнулся белый лебедь. Его клюв указывает в небо. Введи: лебедь»",
-        "correct": ["лебедь","swan","zwaan"],
-        "nextTask": "Перейдите мост в сторону района Kop van Zuid."
+        "title": "Белый дом (Witte Huis)",
+        "address": "Witte de Withstraat 1, 3012 Rotterdam",
+        "riddle": "Я — первый небоскрёб Европы, белый и гордый. Меня бомбили, но я выстоял. Кто я?",
+        "correct": ["witte huis", "белый дом", "witte"],
+        "task": "Посчитайте количество этажей.",
+        "nextTask": "Идите к Музею современного искусства."
       },
       {
-        "title": "Отель New York",
-        "address": "Koninginnenhoofd 1, 3072 AD Rotterdam",
-        "task": "Кто изображён на круглых медальонах на фасаде здания?",
-        "riddle": "«Бывшая штаб-квартира Holland-Amerika Lijn. На фасаде — головы в медальонах. Кого они напоминают? Введи национальность»",
-        "correct": ["голландцы","нидерландцы","dutch"],
-        "nextTask": "Вернитесь на северный берег и прогуляйтесь к Виллемсбрюг — красному мосту."
+        "title": "Музей современного искусства (Kunsthal)",
+        "address": "Westzeedijk 341, 3015 Rotterdam",
+        "riddle": "Я — храм необычных форм и ярких идей. Здесь сталкиваются прошлое и будущее. Что я?",
+        "correct": ["kunsthal", "музей", "музей современного искусства"],
+        "task": "Найдите самую яркую скульптуру у входа.",
+        "nextTask": "Перейдите к Парку скульптур."
       },
       {
-        "title": "Виллемсбрюг (Willemsbrug)",
-        "address": "Willemsbrug, 3011 Rotterdam",
-        "task": "Какого цвета этот мост-близнец Эрасмусбрюг?",
-        "riddle": "«Красный брат белого лебедя. Назови его цвет»",
-        "correct": ["красный","rood","red"],
-        "nextTask": "Следуйте на север к Церкви Святого Лаврентия (Grote Kerk)."
+        "title": "Парк скульптур (Beeldenpark)",
+        "address": "Museumpark, 3015 Rotterdam",
+        "riddle": "Я — зелёный остров, где бронза и камень оживают. Здесь каждый шаг — встреча с искусством. Где я?",
+        "correct": ["парк скульптур", "beeldenpark", "museumpark"],
+        "task": "Найдите самую высокую скульптуру и назовите её.",
+        "nextTask": "Идите к Дому Сонневельда."
       },
       {
-        "title": "Церковь Святого Лаврентия",
-        "address": "Grotekerkplein 27, 3011 GC Rotterdam",
-        "task": "Кто изображён на статуе перед церковью?",
-        "riddle": "«Голландский философ эпохи Возрождения. Его имя начинается на «Э»»",
-        "correct": ["эразм","erasmus"],
-        "nextTask": "Поверните налево и идите к Ратуше."
+        "title": "Дом Сонневельда (Sonnenveld House)",
+        "address": "Sonnenveldstraat 1, 3075 Rotterdam",
+        "riddle": "Я — образец современного быта, где всё функционально и красиво. Кто я?",
+        "correct": ["sonnenveld", "дом сонневельда"],
+        "task": "Найдите оригинальный почтовый ящик.",
+        "nextTask": "Направляйтесь к гавани."
       },
       {
-        "title": "Ратуша Роттердама (Stadhuis)",
-        "address": "Coolsingel 40, 3011 AD Rotterdam",
-        "task": "Найдите башню с часами. Сколько колоколов на ней?",
-        "riddle": "«У ратуши есть башня с часами и... колоколами. Найди цифру на фасаде или введи 47»",
-        "correct": ["47","forty seven"],
-        "nextTask": "Финальная точка — Центральный вокзал."
+        "title": "Гавань (Oude Haven)",
+        "address": "Oude Haven, 3011 Rotterdam",
+        "riddle": "Я — историческое сердце порта, где старые баржи соседствуют с яхтами. Что я?",
+        "correct": ["гавань", "oude haven", "старая гавань"],
+        "task": "Сосчитайте, сколько исторических судов стоит у пирса.",
+        "nextTask": "Идите к мосту Де Сварт."
       },
       {
-        "title": "Центральный вокзал (Rotterdam Centraal)",
-        "address": "Stationsplein 1, 3013 AJ Rotterdam",
-        "task": "Какая форма у крыши вокзала?",
-        "riddle": "«Острый, как стрела, крылатый шлем. Введи форму: треугольник или стрела»",
-        "correct": ["стрела","треугольник","pijl"],
-        "nextTask": null
+        "title": "Мост Де Сварт (De Zwarte Brug)",
+        "address": "De Zwarte Brug, 3011 Rotterdam",
+        "riddle": "Я — чёрный мост-разводной. Когда-то здесь проходили поезда, теперь — только пешеходы. Кто я?",
+        "correct": ["де сварт", "zwarte brug", "чёрный мост"],
+        "task": "Найдите табличку с годом постройки.",
+        "nextTask": "Завершите у Фонда архитектуры."
+      },
+      {
+        "title": "Фонд архитектуры (NAi)",
+        "address": "Museumpark 25, 3015 Rotterdam",
+        "riddle": "Я — хранилище чертежей и идей, где рождаются города будущего. Что я?",
+        "correct": ["nai", "фонд архитектуры", "архитектурный институт"],
+        "task": "Найдите на фасаде логотип NAi.",
+        "nextTask": "🎉 Поздравляем! Квест пройден!"
       }
     ],
-    "en": [],
-    "kk": []
+    "en": [
+      {
+        "title": "Erasmus Bridge",
+        "address": "Erasmusbrug, 3011 Rotterdam",
+        "riddle": "They call me the Swan, I soar over the water, connecting the shores. Who am I?",
+        "correct": ["erasmusbrug", "erasmus bridge"],
+        "task": "Count how many cables hold the bridge.",
+        "nextTask": "Go to the Cube Houses."
+      },
+      {
+        "title": "Cube Houses",
+        "address": "Overblaak 70, 3012 Rotterdam",
+        "riddle": "I am a forest of wooden pyramids, where people live upside down. What am I?",
+        "correct": ["cube houses", "blaak"],
+        "task": "Find the entrance to the lowest house and take a photo nearby.",
+        "nextTask": "Move to the Markthal."
+      },
+      {
+        "title": "Markthal",
+        "address": "Dominee Jan Scharpstraat 298, 3011 Rotterdam",
+        "riddle": "I am a huge arch with fruits and flowers on the ceiling. Outside — grey stone, inside — a rainbow. What am I?",
+        "correct": ["markthal"],
+        "task": "Find the largest still life on the ceiling and describe it.",
+        "nextTask": "Head to the Witte Huis."
+      },
+      {
+        "title": "Witte Huis (White House)",
+        "address": "Witte de Withstraat 1, 3012 Rotterdam",
+        "riddle": "I am the first skyscraper in Europe, white and proud. I was bombed but I survived. Who am I?",
+        "correct": ["witte huis", "white house", "witte"],
+        "task": "Count the number of floors.",
+        "nextTask": "Go to the Kunsthal."
+      },
+      {
+        "title": "Kunsthal (Museum of Contemporary Art)",
+        "address": "Westzeedijk 341, 3015 Rotterdam",
+        "riddle": "I am a temple of unusual forms and bright ideas. Past and future collide here. What am I?",
+        "correct": ["kunsthal", "contemporary art museum"],
+        "task": "Find the most striking sculpture at the entrance.",
+        "nextTask": "Cross to the Sculpture Park."
+      },
+      {
+        "title": "Sculpture Park (Beeldenpark)",
+        "address": "Museumpark, 3015 Rotterdam",
+        "riddle": "I am a green island where bronze and stone come alive. Every step is a meeting with art. Where am I?",
+        "correct": ["sculpture park", "beeldenpark", "museumpark"],
+        "task": "Find the tallest sculpture and name it.",
+        "nextTask": "Go to the Sonnenveld House."
+      },
+      {
+        "title": "Sonnenveld House",
+        "address": "Sonnenveldstraat 1, 3075 Rotterdam",
+        "riddle": "I am a model of modern living, functional and beautiful. Who am I?",
+        "correct": ["sonnenveld"],
+        "task": "Find the original mail box.",
+        "nextTask": "Proceed to the Oude Haven."
+      },
+      {
+        "title": "Oude Haven (Old Harbour)",
+        "address": "Oude Haven, 3011 Rotterdam",
+        "riddle": "I am the historic heart of the port, where old barges sit next to yachts. What am I?",
+        "correct": ["oude haven", "old harbour"],
+        "task": "Count how many historic ships are moored at the pier.",
+        "nextTask": "Go to the De Zwarte Brug."
+      },
+      {
+        "title": "De Zwarte Brug (Black Bridge)",
+        "address": "De Zwarte Brug, 3011 Rotterdam",
+        "riddle": "I am a black drawbridge. Once trains passed over me, now only pedestrians. Who am I?",
+        "correct": ["zwarte brug", "black bridge", "de zwarte"],
+        "task": "Find the plaque with the year of construction.",
+        "nextTask": "Finish at the NAi."
+      },
+      {
+        "title": "NAi (Netherlands Architecture Institute)",
+        "address": "Museumpark 25, 3015 Rotterdam",
+        "riddle": "I am a repository of blueprints and ideas, where the cities of the future are born. What am I?",
+        "correct": ["nai", "architecture institute"],
+        "task": "Find the NAi logo on the facade.",
+        "nextTask": "🎉 Congratulations! Quest completed!"
+      }
+    ]
   },
   "facts": {
     "ru": [
-      "🏛️ Роттердам был почти полностью разрушен в 1940 году. После войны город отстроили заново, превратив в «архитектурную лабораторию Европы».[citation:1]",
-      "🏬 Марктхал — единственное крытое здание-рынок в Нидерландах. Его потолочная фреска «Рог изобилия» печаталась на серверах Pixar.[citation:1]",
-      "🟡 Кубические дома спроектировал архитектор Пит Блом. Каждый дом символизирует «дерево» в «лесу», а наклон стен — 54 градуса.[citation:1]",
-      "🏢 «Белый дом» (Witte Huis) высотой 43 метра был первым небоскрёбом Европы. Говорят, его построили на 1000 сваях из-за болотистой почвы.[citation:1]",
-      "🦢 Мост Эразма в народе называют «Лебедь» из-за его изогнутого пилона. Его стальной тросовый «хвост» весит более 200 тонн.[citation:1]",
-      "🚢 Отель New York — бывшая штаб-квартира судоходной компании Holland-Amerika Lijn. Именно отсюда в 19 веке миллионы эмигрантов отплывали в Америку.[citation:1]",
-      "🏛️ Церковь Святого Лаврентия — единственное средневековое здание в центре Роттердама. Она чудом уцелела во время бомбёжки 1940 года.[citation:1]",
-      "📚 Эразм Роттердамский — великий гуманист, именем которого назван мост и университет. Его статуя перед церковью — старейший памятник города (1622 год)."
+      "Эразмусбрюг называют 'Лебедем', потому что его пилон напоминает лебединую шею. В день открытия моста (1996) он был самым длинным в мире мостом с поворотным пролётом. Но местные шутят, что лебедь иногда 'сердится' — при сильном ветре мост слегка покачивается, и туристы думают, что это землетрясение.",
+      "Кубические дома — это дерзкий эксперимент архитектора Питера Блома. Он хотел показать, что даже в плотной застройке можно создать деревню из кубов. Один из домов используется как музей, и там можно попробовать постоять на стене — пол в них наклонный.",
+      "Марктхал — это не просто рынок, а произведение искусства. Его потолок украшает огромная фреска 'Корнукопия' площадью 11 000 м². Художник изобразил там более 1000 фруктов и овощей, но специально добавил один ананас вниз головой — говорят, это приносит удачу продавцам.",
+      "Белый дом — один из немногих старых зданий, уцелевших после бомбардировок Второй мировой войны. Его построили в 1898 году, и до сих пор там живут люди. Ходят слухи, что на чердаке ночует призрак сторожа, который отказался покинуть здание во время пожара.",
+      "Кунстхал — музей, который не имеет постоянной экспозиции. Здесь всегда что-то меняется. Однажды здесь выставили гигантского робота, который размахивал руками, и его занесло в галерею ветром — пришлось вызывать спецтехнику, чтобы вытащить.",
+      "Парк скульптур в Museumpark — любимое место для фотосессий. Самая известная скульптура — 'Всадник' из полированной стали, который отражает небо и облака. Говорят, если встать под ним и закрыть глаза, можно услышать шум ветра, как в открытом поле.",
+      "Дом Сонневельда был построен как образцовое жильё для рабочих. Его спроектировал архитектор Йоханнес Бринкман, который также создал знаменитый вокзал. В доме есть оригинальный почтовый ящик, который до сих пор работает — можно отправить письмо в прошлое.",
+      "Оде Хавен — одна из старейших гаваней Роттердама. Здесь стоит исторический корабль 'De Buffel', который участвовал в сражениях. Местные говорят, что ночью на нём иногда видят свет, хотя электричество отключено — это 'призрак капитана'.",
+      "Де Зварте Брюг был построен в 1928 году. Он чёрный, потому что его красили с использованием дёгтя. По легенде, когда мост разводят, можно услышать скрип — это душа старого машиниста, который не хочет уходить на пенсию.",
+      "NAi (Институт архитектуры) — это архив всех голландских проектов. В его подвалах хранятся чертежи, которым более 500 лет. Говорят, если провести там ночь, можно услышать шёпот архитекторов, обсуждающих свои планы."
+    ],
+    "en": [
+      "The Erasmus Bridge is called the 'Swan' because its pylon resembles a swan's neck. At its opening in 1996 it was the longest swing bridge in the world. Locals joke that the swan sometimes gets 'angry' — in strong winds the bridge sways slightly, and tourists think it's an earthquake.",
+      "The Cube Houses are a daring experiment by architect Piet Blom. He wanted to show that even in dense development you can create a village of cubes. One of the houses is a museum, where you can try standing on the wall — the floors are sloped.",
+      "Markthal is not just a market, but a work of art. Its ceiling features a huge fresco 'Cornucopia' covering 11,000 m². The artist depicted over 1,000 fruits and vegetables, but deliberately added one pineapple upside down — they say it brings luck to the sellers.",
+      "The White House is one of the few old buildings that survived WWII bombings. It was built in 1898 and people still live there. Rumour has it that the ghost of a watchman, who refused to leave during a fire, spends nights in the attic.",
+      "Kunsthal is a museum with no permanent exhibition — it's always changing. Once, a giant robot was exhibited that waved its arms, and it was blown into the gallery by the wind — they had to call in heavy machinery to get it out.",
+      "The Sculpture Park in Museumpark is a favourite spot for photos. The most famous sculpture is 'The Rider' made of polished steel, which reflects the sky and clouds. They say if you stand under it and close your eyes, you can hear the wind, like in an open field.",
+      "Sonnenveld House was built as model housing for workers. It was designed by architect Johannes Brinkman, who also created the famous train station. The house has an original mailbox that still works — you can send a letter to the past.",
+      "Oude Haven is one of Rotterdam's oldest harbours. It hosts the historic ship 'De Buffel', which took part in battles. Locals say that at night you can sometimes see a light on it, even though the electricity is off — it's the 'captain's ghost'.",
+      "De Zwarte Brug was built in 1928. It's black because it was painted with tar. According to legend, when the bridge is raised, you can hear a creak — it's the soul of the old engine driver who doesn't want to retire.",
+      "The NAi (Netherlands Architecture Institute) is an archive of all Dutch projects. Its basements hold drawings over 500 years old. They say if you spend a night there, you can hear the whispers of architects discussing their plans."
     ]
   }
 }
