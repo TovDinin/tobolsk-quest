@@ -1,110 +1,212 @@
 {
-  "cityId": "venice",
-  "version": 1,
   "steps": {
     "ru": [
       {
-        "title": "Вокзал Санта-Лучия (Venezia Santa Lucia)",
-        "address": "Fondamenta Santa Lucia, 30121 Venezia",
-        "task": "Найдите вход на платформы. Как называется площадь перед вокзалом?",
-        "riddle": "«Ты вышел из поезда и сразу попал на набережную канала. Как называется это место?»",
-        "correct": ["scalzi","santa maria degli scalzi"],
-        "nextTask": "Поверните направо и идите к мосту Скальци (Ponte degli Scalzi)."
-      },
-      {
-        "title": "Мост Скальци (Ponte degli Scalzi)",
-        "address": "Ponte degli Scalzi, 30121 Venezia",
-        "task": "Какой знаменитый мост видно вдалеке, если посмотреть налево?",
-        "riddle": "«Белый мраморный гигант, главная артерия города. Его имя означает «высокий берег»»",
-        "correct": ["риальто","rialto"],
-        "nextTask": "Перейдите мост и следуйте по указателям к Римской площади (Piazzale Roma)."
-      },
-      {
-        "title": "Площадь Рима (Piazzale Roma)",
-        "address": "Piazzale Roma, 30135 Venezia",
-        "task": "Найдите Мост Конституции (Ponte della Costituzione). В каком году он был построен?",
-        "riddle": "«Стеклянный мост современной архитектуры. Год начала 2000-х. Введи последние 3 цифры: 008?»",
-        "correct": ["008","2008"],
-        "nextTask": "Идите по узкой улице Lista di Spagna в сторону Старой Еврейской общины."
-      },
-      {
-        "title": "Гетто (Campo del Ghetto Nuovo)",
-        "address": "Campo del Ghetto Nuovo, 30121 Venezia",
-        "task": "Найдите памятник жертвам Холокоста. Какая фигура там изображена?",
-        "riddle": "«Бронзовые фигуры на стене. Введи: панели или барельефы»",
-        "correct": ["панели","барельефы","panel"],
-        "nextTask": "Вернитесь к Гранд-каналу и найдите остановку вапоретто «San Marcuola»."
-      },
-      {
-        "title": "Рынок Риальто (Mercato di Rialto)",
-        "address": "Campo della Pescaria, 30125 Venezia",
-        "task": "Рынок работает только в первой половине дня. Что здесь продают? (подсказка: еда)",
-        "riddle": "«Рыба, овощи, фрукты — всё самое свежее. Название этого места одним словом»",
-        "correct": ["рынок","mercato","market"],
-        "nextTask": "Поднимитесь на мост Риальто."
-      },
-      {
-        "title": "Мост Риальто (Ponte di Rialto)",
-        "address": "Ponte di Rialto, 30125 Venezia",
-        "task": "Сколько арок у этого знаменитого моста?",
-        "riddle": "«Белый мраморный гигант с одной главной аркой над каналом. Введи 1»",
-        "correct": ["1","one","один"],
-        "nextTask": "Пройдите по мосту и двигайтесь по указателям «San Marco» через торговые улочки."
-      },
-      {
-        "title": "Площадь Сан-Марко (Piazza San Marco)",
+        "title": "Пьяцца Сан-Марко (Собор Святого Марка)",
         "address": "Piazza San Marco, 30124 Venezia",
-        "task": "Кто изображён на центральном фризе базилики? (подсказка: животное)",
-        "riddle": "«Крылатый лев с книгой — символ Венеции. Кто спрятался внутри здания?»",
-        "correct": ["лев","марк","lion","mark"],
-        "nextTask": "Повернитесь спиной к базилике и посмотрите на часы на Часовой башне."
+        "riddle": "Я — сердце города, где львы и золото, где голуби и музыка. Моя колокольня видна с моря. Что я?",
+        "correct": ["сан-марко", "пьяцца сан-марко", "собор святого марка"],
+        "task": "Найдите мозаику с изображением льва.",
+        "nextTask": "Идите к Дворцу дожей."
       },
       {
-        "title": "Мост Вздохов (Ponte dei Sospiri)",
+        "title": "Дворец дожей (Palazzo Ducale)",
         "address": "Piazza San Marco, 1, 30124 Venezia",
-        "task": "Этот мост соединяет Дворец дожей с... Чем?",
-        "riddle": "«Место, где вздыхали осуждённые, в последний раз видя небо. Куда вёл этот мост?»",
-        "correct": ["тюрьма","prison"],
-        "nextTask": "Погрузитесь в узкие улочки района Кастелло."
+        "riddle": "Я — резиденция правителей, здесь вершились судьбы города. Мои колонны — свидетельницы веков. Кто я?",
+        "correct": ["дворец дожей", "palazzo ducale"],
+        "task": "Найдите колонну с вырезанными знаками.",
+        "nextTask": "Перейдите к Мосту вздохов."
       },
       {
-        "title": "Театр Ла Фениче (Teatro La Fenice)",
-        "address": "Campo San Fantin, 1965, 30124 Venezia",
-        "task": "Переведите название театра с итальянского. Кто это?",
-        "riddle": "«Птица, которая возрождается из пепла. Как она называется?»",
-        "correct": ["феникс","fenice"],
-        "nextTask": "Перейдите Гранд-канал на остановке «Accademia» на трагетто (лодке-пароме)."
+        "title": "Мост вздохов (Ponte dei Sospiri)",
+        "address": "Piazza San Marco, 30124 Venezia",
+        "riddle": "Я — мост между дворцом и тюрьмой, мои вздохи — последние вздохи свободы. Как меня зовут?",
+        "correct": ["мост вздохов", "ponte dei sospiri"],
+        "task": "Посчитайте, сколько арок в мосте.",
+        "nextTask": "Направляйтесь к Каналу Гранде."
       },
       {
-        "title": "Академия и Дорсодуро",
+        "title": "Канал Гранде и Риальто",
+        "address": "Rialto Bridge, 30125 Venezia",
+        "riddle": "Я — главная водная артерия, здесь плывут гондолы и вапоретто. Надо мной — самый старый мост. Что я?",
+        "correct": ["канал гранде", "rialto", "мост риальто"],
+        "task": "Найдите самую старую гондолу и опишите её.",
+        "nextTask": "Идите к рыбному рынку."
+      },
+      {
+        "title": "Рыбный рынок (Mercato di Rialto)",
+        "address": "Rialto, 30125 Venezia",
+        "riddle": "Я — шумный и вкусный, здесь пахнет морем и специями. Кто я?",
+        "correct": ["рыбный рынок", "rialto market", "mercatto"],
+        "task": "Найдите самую большую рыбу на прилавке.",
+        "nextTask": "Перейдите к мосту Академии."
+      },
+      {
+        "title": "Мост Академии (Ponte dell'Accademia)",
         "address": "Ponte dell'Accademia, 30123 Venezia",
-        "task": "Какой деревянный мост ведёт в район художников?",
-        "riddle": "«Деревянный мост через Гранд-канал, ведущий к музею изящных искусств. Введи: акка»",
-        "correct": ["акка","академия","accademia"],
-        "nextTask": "Финальная точка — церковь Санта-Мария-делла-Салюте."
+        "riddle": "Я — мост, ведущий к музеям и дворцам, мой деревянный настил скрипит под ногами. Кто я?",
+        "correct": ["мост академии", "ponte dell'accademia", "accademia"],
+        "task": "Найдите перила с надписями влюблённых.",
+        "nextTask": "Спуститесь к церкви Святого Георгия."
       },
       {
-        "title": "Санта-Мария-делла-Салюте (Basilica della Salute)",
-        "address": "Dorsoduro, 30123 Venezia",
-        "task": "В честь какого события построена эта церковь?",
-        "riddle": "«Чума 1630 года унесла треть венецианцев. Церковь построили в благодарность за... (введи: избавление)»",
-        "correct": ["избавление","salute","health"],
-        "nextTask": "Конец маршрута. Перед вами вход в Гранд-канал."
+        "title": "Церковь Святого Георгия (San Giorgio Maggiore)",
+        "address": "Isola di San Giorgio Maggiore, 30133 Venezia",
+        "riddle": "Я — остров с белой церковью, моя колокольня — ориентир для всех кораблей. Кто я?",
+        "correct": ["сан-джорджо", "san giorgio", "церковь святого георгия"],
+        "task": "Поднимитесь на колокольню и сосчитайте гондолы внизу.",
+        "nextTask": "Возвращайтесь к мосту Скьявони."
+      },
+      {
+        "title": "Мост Скьявони (Ponte degli Schiavoni)",
+        "address": "Ponte degli Schiavoni, 30122 Venezia",
+        "riddle": "Я — мост, где торговали славяне, моё имя связано с работорговлей. Но сегодня я просто живописен. Что я?",
+        "correct": ["мост скьявони", "schiavoni"],
+        "task": "Найдите барельеф с изображением человека.",
+        "nextTask": "Идите к Дому Марко Поло."
+      },
+      {
+        "title": "Дом Марко Поло",
+        "address": "Corte del Milion, 30121 Venezia",
+        "riddle": "Я — дом путешественника, который открыл Китай. Здесь он жил и писал свои мемуары. Кто я?",
+        "correct": ["марко поло", "дом марко поло", "corte del milion"],
+        "task": "Найдите табличку с описанием его путешествий.",
+        "nextTask": "Направляйтесь к Музею стекла."
+      },
+      {
+        "title": "Музей стекла (Museo del Vetro)",
+        "address": "Fondamenta Giustinian, 8, 30141 Venezia",
+        "riddle": "Я — храм прозрачности и хрупкости. Здесь рождаются вазы, бокалы и мечты. Что я?",
+        "correct": ["музей стекла", "museo del vetro", "стекло"],
+        "task": "Найдите самую старую вазу в коллекции.",
+        "nextTask": "Завершите у моста Риальто."
+      },
+      {
+        "title": "Мост Риальто (финал)",
+        "address": "Rialto, 30125 Venezia",
+        "riddle": "Я — визитная карточка города, каменная арка с лавочками. Я соединяю два берега. Кто я?",
+        "correct": ["мост риальто", "rialto"],
+        "task": "Найдите магазин с масками для карнавала.",
+        "nextTask": "🎉 Поздравляем! Квест пройден!"
       }
     ],
-    "en": [],
-    "kk": []
+    "en": [
+      {
+        "title": "St. Mark's Square (Basilica di San Marco)",
+        "address": "Piazza San Marco, 30124 Venezia",
+        "riddle": "I am the heart of the city, where lions and gold, doves and music. My bell tower can be seen from the sea. What am I?",
+        "correct": ["san marco", "st marks", "piazza san marco"],
+        "task": "Find the mosaic with the lion.",
+        "nextTask": "Go to the Doge's Palace."
+      },
+      {
+        "title": "Doge's Palace (Palazzo Ducale)",
+        "address": "Piazza San Marco, 1, 30124 Venezia",
+        "riddle": "I am the seat of rulers, where the fate of the city was decided. My columns have seen centuries. Who am I?",
+        "correct": ["doge's palace", "palazzo ducale"],
+        "task": "Find the column with carved signs.",
+        "nextTask": "Cross to the Bridge of Sighs."
+      },
+      {
+        "title": "Bridge of Sighs (Ponte dei Sospiri)",
+        "address": "Piazza San Marco, 30124 Venezia",
+        "riddle": "I am a bridge between the palace and the prison, my sighs are the last breaths of freedom. What is my name?",
+        "correct": ["bridge of sighs", "ponte dei sospiri"],
+        "task": "Count how many arches the bridge has.",
+        "nextTask": "Proceed to the Grand Canal."
+      },
+      {
+        "title": "Grand Canal and Rialto",
+        "address": "Rialto Bridge, 30125 Venezia",
+        "riddle": "I am the main water artery, gondolas and vaporetti sail on me. Above me is the oldest bridge. What am I?",
+        "correct": ["grand canal", "rialto", "rialto bridge"],
+        "task": "Find the oldest gondola and describe it.",
+        "nextTask": "Go to the fish market."
+      },
+      {
+        "title": "Rialto Fish Market (Mercato di Rialto)",
+        "address": "Rialto, 30125 Venezia",
+        "riddle": "I am noisy and tasty, smelling of sea and spices. Who am I?",
+        "correct": ["fish market", "rialto market", "mercatto"],
+        "task": "Find the largest fish on the stall.",
+        "nextTask": "Cross to the Accademia Bridge."
+      },
+      {
+        "title": "Accademia Bridge (Ponte dell'Accademia)",
+        "address": "Ponte dell'Accademia, 30123 Venezia",
+        "riddle": "I am a bridge leading to museums and palaces, my wooden planks creak underfoot. Who am I?",
+        "correct": ["accademia bridge", "ponte dell'accademia", "accademia"],
+        "task": "Find the railings with lovers' inscriptions.",
+        "nextTask": "Descend to the Church of St. George."
+      },
+      {
+        "title": "San Giorgio Maggiore (Church)",
+        "address": "Isola di San Giorgio Maggiore, 30133 Venezia",
+        "riddle": "I am an island with a white church, my bell tower is a landmark for all ships. Who am I?",
+        "correct": ["san giorgio", "st. george", "san giorgio maggiore"],
+        "task": "Climb the bell tower and count the gondolas below.",
+        "nextTask": "Return to the Schiavoni Bridge."
+      },
+      {
+        "title": "Schiavoni Bridge (Ponte degli Schiavoni)",
+        "address": "Ponte degli Schiavoni, 30122 Venezia",
+        "riddle": "I am a bridge where Slavs traded, my name is linked to the slave trade. But today I am simply picturesque. What am I?",
+        "correct": ["schiavoni bridge", "ponte degli schiavoni"],
+        "task": "Find the bas-relief with a human figure.",
+        "nextTask": "Go to Marco Polo's House."
+      },
+      {
+        "title": "Marco Polo's House",
+        "address": "Corte del Milion, 30121 Venezia",
+        "riddle": "I am the home of a traveller who opened China. He lived here and wrote his memoirs. Who am I?",
+        "correct": ["marco polo", "corte del milion"],
+        "task": "Find the plaque describing his travels.",
+        "nextTask": "Head to the Glass Museum."
+      },
+      {
+        "title": "Glass Museum (Museo del Vetro)",
+        "address": "Fondamenta Giustinian, 8, 30141 Venezia",
+        "riddle": "I am a temple of transparency and fragility. Vases, glasses and dreams are born here. What am I?",
+        "correct": ["glass museum", "museo del vetro"],
+        "task": "Find the oldest vase in the collection.",
+        "nextTask": "Finish at the Rialto Bridge."
+      },
+      {
+        "title": "Rialto Bridge (final)",
+        "address": "Rialto, 30125 Venezia",
+        "riddle": "I am the city's landmark, a stone arch with shops. I connect two banks. Who am I?",
+        "correct": ["rialto bridge", "rialto"],
+        "task": "Find a shop selling carnival masks.",
+        "nextTask": "🎉 Congratulations! Quest completed!"
+      }
+    ]
   },
   "facts": {
     "ru": [
-      "🛶 Венеция стоит на 118 островах, соединённых 400 мостами. Автомобилей здесь нет — только каналы и узкие улочки-калли.[citation:4]",
-      "🦁 Крылатый лев — символ Венеции и евангелиста Марка, чьи мощи хранятся в базилике. Лев держит книгу «Мир тебе, Марк, евангелист мой».[citation:6]",
-      "💔 Мост Вздохов получил своё название благодаря вздохам осуждённых, проходивших по нему из Дворца дожей в тюрьму. В последний раз они видели небо и вздыхали.[citation:4]",
-      "🎭 Театр Ла Фениче дважды сгорал дотла и оба раза был восстановлен. Название «Феникс» оправдывает себя полностью.",
-      "🏛️ Санта-Мария-делла-Салюте — базилика-восьмигранник, построенная в благодарность за избавление от чумы 1630 года. Ежегодно 21 ноября венецианцы идут по временному понтонному мосту на молебен.[citation:2]",
-      "🎨 Район Дорсодуро — настоящий музей под открытым небом. Здесь находится мастерская по ремонту гондол — Squero di San Trovaso, работающая с 17 века.[citation:4]",
-      "📖 Рынок Риальто работает с 7:30 до 12:30 ежедневно, кроме воскресенья. Торговаться здесь не принято — прикосновение к товару без покупки считается неуважением.[citation:4]",
-      "🚤 Трагетто — дешёвая альтернатива гондоле. Это большая деревянная лодка-паром, которая перевозит через Гранд-канал за 2 евро. Венецианцы пользуются ею стоя.[citation:2]"
+      "Пьяцца Сан-Марко — единственная площадь в Венеции, которую называют 'пьяцца', все остальные — 'кампо'. Здесь живёт знаменитая колония голубей, которых кормят туристы. Говорят, если голубь клюнет тебя в голову, ты обязательно вернёшься в Венецию.",
+      "Дворец дожей — место, где вершилась история. У входа стоят две колонны: на одной святой, на другой — лев. По легенде, если пройти между ними с закрытыми глазами, загаданное желание сбудется. Но никто не решается.",
+      "Мост вздохов получил своё название из-за того, что заключённые вздыхали, видя свободу через решётку. Само здание тюрьмы построено так, чтобы из окон был виден только мост, а не город.",
+      "Канал Гранде — главная улица Венеции, её длина почти 4 км. По нему ежедневно проходят сотни гондол, и каждая гондола стоит как небольшой автомобиль. Говорят, что самый старый гондольер всё ещё работает и знает все тайны города.",
+      "Рыбный рынок Риальто работает с утра до полудня. Здесь продают рыбу, которую выловили всего несколько часов назад. Местные говорят, что самый свежий улов достаётся тем, кто приходит до рассвета.",
+      "Мост Академии — один из трёх мостов через Гранде. Его построили в 1930-х из дерева, хотя он выглядит как каменный. С него открывается лучший вид на канал и церковь Санта-Мария-делла-Салюте.",
+      "Церковь Святого Георгия расположена на одноимённом острове. Её колокольня — копия колокольни Сан-Марко, но построена на 100 лет позже. Говорят, что на колокольне живёт белый голубь, который приносит удачу.",
+      "Мост Скьявони — один из самых старых в Венеции. Он был построен в 16 веке. Здесь торговали славяне, и мост служил местом встреч моряков. В XIX веке здесь были сняты несколько сцен известного фильма.",
+      "Дом Марко Поло находится на углу двора. Хотя оригинальный дом не сохранился, но на этом месте стоит памятная табличка. Местные жители утверждают, что Марко Поло привёз из Китая не только специи, но и первый рецепт мороженого.",
+      "Музей стекла на острове Мурано — это хранилище шедевров, которым более 500 лет. Самый древний экспонат — ваза, которую выдули в 14 веке. Говорят, что если прикоснуться к ней, можно услышать звон древнего стекла.",
+      "Мост Риальто — самый известный в Венеции. Он построен из белого мрамора и украшен барельефами. На мосту всегда многолюдно, и уличные музыканты играют серенады. Говорят, если поцеловаться на мосту на закате, любовь будет вечной."
+    ],
+    "en": [
+      "St. Mark's Square is the only square in Venice called 'piazza', all others are 'campo'. It is home to a famous colony of pigeons fed by tourists. They say if a pigeon pecks you on the head, you will definitely return to Venice.",
+      "The Doge's Palace is where history was made. At the entrance are two columns: one with a saint, the other with a lion. Legend has it that if you walk between them with your eyes closed, your wish will come true. But no one dares.",
+      "The Bridge of Sighs got its name because prisoners sighed when they saw freedom through the bars. The prison itself was built so that from the windows only the bridge was visible, not the city.",
+      "The Grand Canal is the main street of Venice, nearly 4 km long. Hundreds of gondolas pass along it every day, each gondola costs as much as a small car. They say the oldest gondolier still works and knows all the city's secrets.",
+      "The Rialto Fish Market is open from morning until noon. They sell fish caught just hours earlier. Locals say the freshest catch goes to those who come before dawn.",
+      "The Accademia Bridge is one of three bridges across the Grand Canal. It was built in the 1930s from wood, though it looks like stone. It offers the best view of the canal and the church of Santa Maria della Salute.",
+      "The church of San Giorgio Maggiore is located on its own island. Its bell tower is a copy of the San Marco bell tower, but built 100 years later. They say a white dove lives on the bell tower, bringing good luck.",
+      "The Schiavoni Bridge is one of the oldest in Venice. It was built in the 16th century. Here Slavs traded, and the bridge was a meeting place for sailors. In the 19th century several scenes from a famous film were shot here.",
+      "Marco Polo's house is on the corner of the courtyard. Although the original house is gone, a commemorative plaque stands on this spot. Locals claim Marco Polo brought back not only spices from China but also the first recipe for ice cream.",
+      "The Glass Museum on Murano island is a collection of masterpieces over 500 years old. The oldest exhibit is a vase blown in the 14th century. They say if you touch it, you can hear the ringing of ancient glass.",
+      "The Rialto Bridge is the most famous in Venice. It is built of white marble and decorated with bas-reliefs. The bridge is always crowded, and street musicians play serenades. They say if you kiss on the bridge at sunset, love will be eternal."
     ]
   }
 }
