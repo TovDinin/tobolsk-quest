@@ -1,129 +1,230 @@
 {
-  "cityId": "tobolsk",
-  "version": 1,
-  "routeDistance": 6.3,
-  "estimatedTime": 1.9,
-  "calories": 360,
-  "totalPoints": 12,
-  "maxScore": 36,
   "steps": {
     "ru": [
       {
         "title": "Пристань / Набережная Иртыша",
         "address": "ул. Ленина, 1 (набережная Иртыша)",
-        "task": "Найди скульптуру или стенд у реки, связанный с основателем Сибири.",
-        "riddle": "«Стрелой Иртыш я покорил, Хан Кучум бежал в испуге. Моя фамилия — ...»",
-        "correct": ["ермак"],
-        "nextTask": "Идите к Тобольскому кремлю, входная группа. Поднимитесь по Прямскому взвозу."
+        "riddle": "Я встречаю корабли и провожаю в дальний путь. На моих досках — следы веков и купеческие байки. Где я?",
+        "correct": ["пристань", "набережная", "иртыш"],
+        "task": "Найдите табличку с названием речного вокзала и прочитайте год постройки.",
+        "nextTask": "Отправляйтесь к памятнику Ермаку."
       },
       {
-        "title": "Тобольский кремль (вход)",
-        "address": "ул. Ремезова, 1 (входная группа)",
-        "task": "Найдите табличку с годом основания Тобольска на воротах или информационном стенде.",
-        "riddle": "«Четыре цифры: год рожденья града. Сложи их все: 1+5+8+7 = ?»",
-        "correct": ["1587","21"],
-        "nextTask": "Идите к Софийскому собору (центральный храм кремля)."
+        "title": "Памятник Ермаку",
+        "address": "Кремлёвская площадь",
+        "riddle": "Стою я на высоком холме, в руке держу знамя победы. Кто я и что завоевал?",
+        "correct": ["ермак", "ермак тимофеевич"],
+        "task": "Рассмотрите барельеф на постаменте — кто изображён?",
+        "nextTask": "Идите к Софийскому собору."
       },
       {
         "title": "Софийский собор",
         "address": "ул. Ремезова, 1 (территория кремля)",
-        "task": "Найдите памятный знак о строительстве собора. В каком веке построен?",
-        "riddle": "«Первый каменный храм за Уралом. В каком веке построен? (римскими цифрами)»",
-        "correct": ["17","семнадцать"],
-        "nextTask": "Идите к колокольне Софийского собора."
+        "riddle": "Я главный храм Сибири, мои купола видны за многие вёрсты. Мои стены помнят Петра I. Кто я?",
+        "correct": ["софийский собор", "софия"],
+        "task": "Найдите икону с изображением святой Софии.",
+        "nextTask": "Спуститесь к Тюремному замку."
       },
       {
-        "title": "Колокольня Софийского собора",
-        "address": "ул. Ремезова, 1 (южная сторона)",
-        "task": "Посчитайте количество колонн или ярусов.",
-        "riddle": "«Три яруса вверх — цифру дай»",
-        "correct": ["3","три"],
-        "nextTask": "Идите к Гостиному двору."
+        "title": "Тюремный замок (острог)",
+        "address": "ул. Октябрьская, 5",
+        "riddle": "Я — место, где томились враги и мятежники. В стенах моих — стоны и тайны. Что я?",
+        "correct": ["острог", "тюрьма", "тюремный замок"],
+        "task": "Найдите мемориальную доску с именами ссыльных декабристов.",
+        "nextTask": "Прогуляйтесь к Дому воеводы."
+      },
+      {
+        "title": "Дом воеводы",
+        "address": "ул. Мира, 12 (кремль)",
+        "riddle": "Я — резиденция правителя, здесь вершились судьбы Сибири. Мои окна глядят на Иртыш. Кто я?",
+        "correct": ["дом воеводы", "воеводский дом"],
+        "task": "Найдите герб Тобольска на фасаде.",
+        "nextTask": "Перейдите к Гостиному двору."
       },
       {
         "title": "Гостиный двор",
-        "address": "ул. Ремезова, 1 (территория кремля)",
-        "task": "Найдите плиту с римскими цифрами «XVIII век».",
-        "riddle": "«XVIII римскими — какой век цифрой?»",
-        "correct": ["18","восемнадцать"],
-        "nextTask": "Идите к Рентерее (Приказная палата, башня с часами)."
+        "address": "ул. Кирова, 7",
+        "riddle": "Я — торговая душа города, здесь звенели монеты и заключались сделки. Что я?",
+        "correct": ["гостиный двор", "гостиный"],
+        "task": "Посчитайте количество арок на фасаде.",
+        "nextTask": "Направляйтесь к церкви Захария и Елизаветы."
       },
       {
-        "title": "Рентерея (Приказная палата)",
-        "address": "ул. Ремезова, 1 (башня с часами)",
-        "task": "Рассмотрите герб города на фасаде. Какое животное изображено в верхней части?",
-        "riddle": "«Пушной зверёк с луком, гордость тайги»",
-        "correct": ["соболь"],
+        "title": "Церковь Захария и Елизаветы",
+        "address": "ул. Республики, 19",
+        "riddle": "Я — небольшая, но уютная, моя колокольня звонит над городом. В честь кого я освящена?",
+        "correct": ["захария", "елизаветы", "захарий и елизавета"],
+        "task": "Найдите старую икону с позолотой.",
         "nextTask": "Идите к памятнику Семёну Ремезову."
       },
       {
         "title": "Памятник Семёну Ремезову",
-        "address": "ул. Ремезова, 1 (смотровая площадка)",
-        "task": "Кем по профессии был Ремезов? (одно слово на постаменте)",
-        "riddle": "«Не художник, не строитель, но чертил он всю Сибирь»",
-        "correct": ["картограф","чертёжник"],
-        "nextTask": "Идите к Тюремному замку (Тобольский централ)."
+        "address": "сквер Ремезова",
+        "riddle": "Я — картограф и зодчий, подарил Тобольску кремль. В руке держу свиток чертежей. Кто я?",
+        "correct": ["ремезов", "семён ремезов"],
+        "task": "Прочитайте надпись на постаменте.",
+        "nextTask": "Перейдите к Никольскому взвозу."
       },
       {
-        "title": "Тюремный замок (централ)",
-        "address": "ул. Алябьева, 3",
-        "task": "Найдите табличку с фамилией знаменитого писателя, отбывавшего здесь ссылку.",
-        "riddle": "«Я создал «Преступление и наказание», здесь шёл на каторгу. Моя фамилия»",
-        "correct": ["достоевский"],
-        "nextTask": "Идите к Дому губернатора."
+        "title": "Никольский взвоз",
+        "address": "ул. Ленина, 35 (спуск к реке)",
+        "riddle": "Я — крутой спуск к воде, когда-то по мне возили товары и дрова. Как меня зовут?",
+        "correct": ["взвоз", "никольский взвоз", "никольский"],
+        "task": "Найдите старую брусчатку и сосчитайте ступени.",
+        "nextTask": "Поднимитесь к Абалакскому монастырю (вид открывается с высокого берега)."
       },
       {
-        "title": "Дом губернатора",
-        "address": "ул. Ремезова, 1 (западная часть кремля)",
-        "task": "Фамилия декабриста, отбывавшего ссылку в этом здании.",
-        "riddle": "«Басаргин или Муравьёв — есть табличка»",
-        "correct": ["басаргин","муравьев-апостол"],
-        "nextTask": "Идите к памятнику Менделееву (ул. Мира)."
+        "title": "Вид на Абалакский монастырь",
+        "address": "смотровая площадка у кремля",
+        "riddle": "Вдалеке виднеются мои купола и стены, я — древняя обитель на горе. Как я называюсь?",
+        "correct": ["абалакский монастырь", "абалак"],
+        "task": "Сделайте панорамное фото.",
+        "nextTask": "Спуститесь к Скверу влюблённых."
       },
       {
-        "title": "Памятник Менделееву",
-        "address": "ул. Мира, 10 (бывшее реальное училище)",
-        "task": "Год установки памятника — 1984. Введите последнюю цифру.",
-        "riddle": "«Год: 1984. Цифра последняя — открой секрет»",
-        "correct": ["4","четыре"],
-        "nextTask": "Идите к Дому мастеров (ул. Октябрьская)."
+        "title": "Сквер влюблённых",
+        "address": "набережная, ул. Свободы",
+        "riddle": "Я — романтичный уголок, где ветераны сажали деревья в честь любви. Где я?",
+        "correct": ["сквер влюблённых", "сквер любви"],
+        "task": "Найдите самый старый дуб и обнимите его.",
+        "nextTask": "Завершите у подножия кремля."
       },
       {
-        "title": "Дом мастеров",
-        "address": "ул. Октябрьская, 19",
-        "task": "Найдите номер дома (чётный/нечётный). Введите последнюю цифру номера.",
-        "riddle": "«Дом мастеров — чётный номер 18? Введи 2»",
-        "correct": ["2"],
-        "nextTask": "Финальная точка — смотровая площадка у кремля."
-      },
-      {
-        "title": "Смотровая площадка (финал)",
-        "address": "ул. Ремезова, 1 (у стены кремля)",
-        "task": "Сколько ступеней ведёт к смотровой площадке? (примерно)",
-        "riddle": "«Лестница вниз — число ступеней 48? Введи 48»",
-        "correct": ["48"],
-        "nextTask": null
+        "title": "Подножие кремля",
+        "address": "нижняя часть кремлёвского холма",
+        "riddle": "Я — основа всего города, отсюда началась Сибирь. Мои камни помнят первые шаги первопроходцев. Что я?",
+        "correct": ["кремль", "подножие"],
+        "task": "Найдите закладной камень основания кремля.",
+        "nextTask": "🎉 Поздравляем! Квест пройден!"
       }
     ],
-    "en": [],
-    "kk": []
+    "en": [
+      {
+        "title": "Pier / Irtysh Embankment",
+        "address": "Lenin St., 1 (Irtysh embankment)",
+        "riddle": "I greet ships and send them off on long journeys. My boards bear traces of centuries and merchant tales. Where am I?",
+        "correct": ["pier", "embankment", "irtysh"],
+        "task": "Find the plaque with the river station name and read the year it was built.",
+        "nextTask": "Head to the Yermak Monument."
+      },
+      {
+        "title": "Monument to Yermak",
+        "address": "Kremlin Square",
+        "riddle": "I stand on a high hill, holding the banner of victory. Who am I and what did I conquer?",
+        "correct": ["yermak", "yermak timofeevich"],
+        "task": "Look at the bas-relief on the pedestal — who is depicted?",
+        "nextTask": "Go to St. Sophia Cathedral."
+      },
+      {
+        "title": "St. Sophia Cathedral",
+        "address": "Remezov St., 1 (Kremlin grounds)",
+        "riddle": "I am the main church of Siberia, my domes can be seen for miles. My walls remember Peter the Great. Who am I?",
+        "correct": ["sophia cathedral", "saint sophia"],
+        "task": "Find the icon depicting Saint Sophia.",
+        "nextTask": "Descend to the Prison Castle."
+      },
+      {
+        "title": "Prison Castle (Ostrog)",
+        "address": "Oktyabrskaya St., 5",
+        "riddle": "I am a place where enemies and rebels languished. My walls hide groans and secrets. What am I?",
+        "correct": ["ostrog", "prison", "prison castle"],
+        "task": "Find the memorial plaque with the names of exiled Decembrists.",
+        "nextTask": "Walk to the Voyvoda's House."
+      },
+      {
+        "title": "Voyvoda's House",
+        "address": "Mira St., 12 (Kremlin)",
+        "riddle": "I am the residence of the ruler, where the fate of Siberia was decided. My windows overlook the Irtysh. Who am I?",
+        "correct": ["voyvoda's house", "voyvoda"],
+        "task": "Find the coat of arms of Tobolsk on the facade.",
+        "nextTask": "Move to the Gostiny Dvor."
+      },
+      {
+        "title": "Gostiny Dvor (Merchant Yard)",
+        "address": "Kirov St., 7",
+        "riddle": "I am the trading soul of the city, where coins jingled and deals were made. What am I?",
+        "correct": ["gostiny dvor", "gostiny"],
+        "task": "Count the number of arches on the facade.",
+        "nextTask": "Head to the Church of Zachary and Elizabeth."
+      },
+      {
+        "title": "Church of Zachary and Elizabeth",
+        "address": "Respubliki St., 19",
+        "riddle": "I am small but cozy, my bell tower rings over the city. In whose honor am I consecrated?",
+        "correct": ["zachary", "elizabeth", "zachary and elizabeth"],
+        "task": "Find the old gilded icon.",
+        "nextTask": "Go to the monument to Semyon Remezov."
+      },
+      {
+        "title": "Monument to Semyon Remezov",
+        "address": "Remezov Square",
+        "riddle": "I am a cartographer and architect, I gave Tobolsk its Kremlin. In my hand I hold a scroll of drawings. Who am I?",
+        "correct": ["remezov", "semyon remezov"],
+        "task": "Read the inscription on the pedestal.",
+        "nextTask": "Cross to Nikolsky Vzvoz."
+      },
+      {
+        "title": "Nikolsky Vzvoz (Descent)",
+        "address": "Lenin St., 35 (descent to the river)",
+        "riddle": "I am a steep descent to the water, once goods and firewood were hauled along me. What is my name?",
+        "correct": ["vzvoz", "nikolsky vzvoz", "nikolsky"],
+        "task": "Find the old cobblestones and count the steps.",
+        "nextTask": "Climb to the viewpoint of the Abalak Monastery."
+      },
+      {
+        "title": "View of Abalak Monastery",
+        "address": "viewing platform at the Kremlin",
+        "riddle": "In the distance you can see my domes and walls — I am an ancient monastery on a hill. What am I called?",
+        "correct": ["abalak monastery", "abalak"],
+        "task": "Take a panoramic photo.",
+        "nextTask": "Descend to the Lovers' Square."
+      },
+      {
+        "title": "Lovers' Square",
+        "address": "embankment, Svobody St.",
+        "riddle": "I am a romantic corner, where veterans planted trees in honor of love. Where am I?",
+        "correct": ["lovers' square", "love square"],
+        "task": "Find the oldest oak tree and hug it.",
+        "nextTask": "Finish at the foot of the Kremlin."
+      },
+      {
+        "title": "Foot of the Kremlin",
+        "address": "lower part of the Kremlin hill",
+        "riddle": "I am the foundation of the entire city, Siberia began from here. My stones remember the first steps of the pioneers. What am I?",
+        "correct": ["kremlin", "foundation"],
+        "task": "Find the foundation stone of the Kremlin.",
+        "nextTask": "🎉 Congratulations! Quest completed!"
+      }
+    ]
   },
   "facts": {
     "ru": [
-      "🏰 Ермак Тимофеевич — казачий атаман. Легенда: сокровища Ермака на дне Иртыша.",
-      "🏛️ Тобольск основан в 1587 году. Более 200 лет был столицей Сибири.",
-      "⛪ Софийский собор — первый каменный храм в Сибири (построен в 1686 году).",
-      "🔔 Колокольня высотой 65 метров. На ней часы с музыкой.",
-      "🛍️ Гостиный двор — стены толщиной 2 метра, уцелел при пожаре 1841 года.",
-      "🐅 Соболь на гербе — символ пушного богатства Сибири.",
-      "🗺️ Ремезов создал первый атлас Сибири — «Чертёжную книгу».",
-      "📚 Достоевский получил здесь Евангелие от жён декабристов.",
-      "👑 Декабристы открыли первую бесплатную школу в Сибири.",
-      "🧪 Менделеев родился в Тобольске, здесь увлёкся химией.",
-      "🏺 Дом мастеров — центр ремёсел, где можно увидеть старинные техники ремесла.",
-      "🌅 С площадки открывается вид на Иртыш и весь кремль."
+      "В 1912 году на этой пристани чуть не утонул знаменитый купец Корнилов — его спасла собственная борода, за которую он зацепился за борт. Местные шутят, что с тех пор купцы отращивают бороды на удачу. А ещё именно отсюда начинался знаменитый «чайный путь» — сотни тонн китайского чая проходили через эту пристань, и говорят, что вода в Иртыше тогда была тёмной от чайной пыли.",
+      "Ермак, согласно легенде, подарил сибирскую землю русскому царю, но сам погиб в водах Иртыша. Местные рыбаки утверждают, что в полнолуние можно увидеть его призрак с веслом в руках. Памятник же установлен на месте, где он якобы впервые ступил на сибирский берег.",
+      "Софийский собор — первый каменный храм Сибири. Его строили 30 лет, и во время строительства один из мастеров упал с лесов, но остался жив, потому что зацепился за икону Божьей Матери. С тех пор эту икону хранят как чудотворную.",
+      "Тюремный замок известен тем, что в нём содержали декабристов. Один из них, князь Оболенский, ухитрялся петь арии из опер, и его голос был слышен даже на улице. Говорят, местные дамы влюблялись в него заочно.",
+      "В доме воеводы постоянно случались пожары, но каждый раз дом отстраивали заново. Причина — воевода любил курить трубку в кабинете, и искры падали на бумаги. Но ни один указ не сгорел — все их успевали спасать.",
+      "Гостиный двор был самым шумным местом города. Там торговали всем — от соболей до самоваров. Один купец по фамилии Сорокин прославился тем, что продал свой сундук с золотом и купил на эти деньги целый корабль чая. Говорят, он никогда не прогадывал.",
+      "Церковь Захария и Елизаветы построена в честь того, что в этот день царь Пётр I заложил новый корабль. Но местные жители предпочитают вспоминать другую историю: якобы здесь венчались неразлучные влюблённые, которые после свадьбы ушли в монахи.",
+      "Семён Ремезов был не только картографом, но и ювелиром. Он создал уникальный чертёж Тобольска, который хранится в музее. Говорят, он зашифровал в нём место клада, но никто не может разгадать его шифр.",
+      "Никольский взвоз — самый крутой спуск в городе. По легенде, когда здесь проезжал воз с сеном, он перевернулся, и сено упало прямо в реку. Но на следующий день на этом месте выросла целая лужайка, и с тех пор там всегда цветут цветы.",
+      "Абалакский монастырь виден из любой точки города. Согласно преданию, именно здесь явилась икона Божьей Матери, которая спасла Тобольск от чумы. Теперь каждый год 8 июля здесь проходит крестный ход.",
+      "Сквер влюблённых был заложен в честь 50-летия Победы. Каждый дуб здесь посажен ветеранами в память о своих жёнах. Говорят, если обнять самый старый дуб и загадать желание, оно обязательно сбудется.",
+      "Подножие кремля — это место, где по легенде был зарыт первый камень Сибири. Его нашёл казак, который заложил крепость на этом месте. С тех пор каждый год 1 июля здесь проходит праздник города."
     ],
-    "en": [],
-    "kk": []
+    "en": [
+      "In 1912, the famous merchant Kornilov almost drowned at this pier — he was saved by his own beard, which got caught on the side of the boat. Locals joke that since then merchants grow beards for luck. And this is where the famous 'Tea Route' began — hundreds of tons of Chinese tea passed through this pier, and they say the water in the Irtysh was dark from tea dust.",
+      "According to legend, Yermak gave the Siberian land to the Russian Tsar, but died in the waters of the Irtysh. Local fishermen claim that on full moon nights you can see his ghost with an oar in his hands. The monument stands on the spot where he supposedly first set foot on Siberian soil.",
+      "St. Sophia Cathedral was the first stone church in Siberia. It took 30 years to build, and during construction one master fell from the scaffolding but survived because he caught hold of an icon of the Virgin Mary. Since then, that icon has been kept as miraculous.",
+      "The Prison Castle is famous for holding Decembrists. One of them, Prince Obolensky, would sing operatic arias, and his voice could be heard even on the street. It's said that local ladies fell in love with him from a distance.",
+      "The Voyvoda's House was constantly on fire, but each time it was rebuilt. The reason? The voyvoda loved to smoke his pipe in his study, and sparks would fall on papers. But not a single decree was ever burned — they were always saved in time.",
+      "The Gostiny Dvor was the noisiest place in the city. Everything was traded there — from sables to samovars. One merchant by the name of Sorokin became famous for selling his chest of gold and buying an entire shipload of tea with the money. They say he never lost a deal.",
+      "The Church of Zachary and Elizabeth was built in honor of the day Tsar Peter I laid down a new ship. But locals prefer another story: allegedly, inseparable lovers were married here, and after the wedding they both became monks.",
+      "Semyon Remezov was not only a cartographer but also a jeweler. He created a unique map of Tobolsk that is kept in the museum. They say he encrypted a treasure location in it, but no one can decipher it.",
+      "Nikolsky Vzvoz is the steepest descent in the city. Legend has it that when a hay cart passed here, it overturned and the hay fell straight into the river. But the next day a whole meadow grew there, and since then flowers always bloom there.",
+      "The Abalak Monastery is visible from any point in the city. According to tradition, it was here that the icon of the Virgin Mary appeared, which saved Tobolsk from the plague. Every year on July 8, a religious procession takes place there.",
+      "Lovers' Square was founded in honor of the 50th anniversary of the Victory. Each oak here was planted by veterans in memory of their wives. It's said that if you hug the oldest oak and make a wish, it will surely come true.",
+      "The foot of the Kremlin is the place where, according to legend, the first stone of Siberia was buried. It was found by a Cossack who founded the fortress here. Every year on July 1, a city festival takes place there."
+    ]
   }
 }
