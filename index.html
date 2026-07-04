@@ -539,7 +539,7 @@
     };
 
     let currentCity = null, currentLang = 'ru', currentSteps = [], currentFacts = [], currentIndex = 0, scores = [], attempts = [], completed = [], hintShown = [], totalScore = 0;
-    let stepsContainer, totalSpan, completedSpan, totalPointsSpan, progressBar, congratsDiv, cityGrid, appTitleEl, appSubtitleEl, selectCityTitleEl, citySelector, langBar;
+    let stepsContainer, totalSpan, completedSpan, totalPointsSpan, progressBar, congratsDiv, cityGrid, appTitleEl, appSubtitleEl, selectCityTitleEl;
 
     function showMessage(msg) {
         const toast = document.getElementById('toastMsg');
@@ -614,13 +614,23 @@
         document.getElementById('introOverlay').style.display = 'flex';
         document.getElementById('closeIntro').onclick = () => {
             document.getElementById('introOverlay').style.display = 'none';
-            // Скрываем селекторы после старта
-            document.getElementById('citySelector').classList.add('hidden');
-            document.getElementById('langBar').classList.add('hidden');
+            // Скрываем селекторы через updateUI
+            updateUI();
         };
     }
 
     function updateUI() {
+        // Скрываем/показываем селекторы в зависимости от состояния квеста
+        const citySelector = document.getElementById('citySelector');
+        const langBar = document.getElementById('langBar');
+        if (currentCity && currentSteps.length > 0) {
+            if (citySelector) citySelector.classList.add('hidden');
+            if (langBar) langBar.classList.add('hidden');
+        } else {
+            if (citySelector) citySelector.classList.remove('hidden');
+            if (langBar) langBar.classList.remove('hidden');
+        }
+
         if (!currentSteps.length) return;
         totalSpan.innerText = totalScore;
         const compCount = completed.filter(c => c === true).length;
@@ -681,9 +691,6 @@
             renderCurrentQuestion();
             updateUI();
             congratsDiv.style.display = 'none';
-            // Показываем селекторы при возврате на главную
-            document.getElementById('citySelector').classList.remove('hidden');
-            document.getElementById('langBar').classList.remove('hidden');
         });
         document.getElementById('backToCitiesBtn')?.addEventListener('click', () => {
             congratsDiv.style.display = 'none';
@@ -697,13 +704,15 @@
     }
 
     function renderCurrentQuestion() {
-        // Скрываем/показываем селекторы в зависимости от состояния квеста
+        // Скрываем/показываем селекторы (это уже делает updateUI, но дублируем для надёжности)
+        const citySelector = document.getElementById('citySelector');
+        const langBar = document.getElementById('langBar');
         if (currentCity && currentSteps.length > 0) {
-            document.getElementById('citySelector').classList.add('hidden');
-            document.getElementById('langBar').classList.add('hidden');
+            if (citySelector) citySelector.classList.add('hidden');
+            if (langBar) langBar.classList.add('hidden');
         } else {
-            document.getElementById('citySelector').classList.remove('hidden');
-            document.getElementById('langBar').classList.remove('hidden');
+            if (citySelector) citySelector.classList.remove('hidden');
+            if (langBar) langBar.classList.remove('hidden');
         }
 
         if (!currentSteps.length || !currentSteps[currentIndex]) return;
@@ -951,8 +960,6 @@
         appTitleEl = document.getElementById('appTitle');
         appSubtitleEl = document.getElementById('appSubtitle');
         selectCityTitleEl = document.getElementById('selectCityTitle');
-        citySelector = document.getElementById('citySelector');
-        langBar = document.getElementById('langBar');
 
         initChat();
         initFeedback();
