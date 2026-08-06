@@ -298,6 +298,15 @@
         .round-btn:hover { transform: scale(1.05); }
         .donate-btn { background: #2c6e2c; font-size: 24px; }
         .feedback-btn { background: #2c6e2c; font-size: 24px; }
+        
+        /* Кнопка выхода в главное меню */
+        .exit-btn {
+            background: #e74c3c;
+            font-size: 24px;
+        }
+        .exit-btn:hover {
+            background: #c0392b;
+        }
 
         /* Modals */
         .chat-modal, .feedback-modal, .donate-modal {
@@ -452,6 +461,7 @@
 </div>
 
 <div class="bottom-buttons">
+    <button class="round-btn exit-btn" id="exitButton">🚪</button>
     <button class="round-btn donate-btn" id="donateButton">☕</button>
     <button class="round-btn feedback-btn" id="feedbackButton">💬</button>
     <button class="round-btn" id="aiButton">🤖</button>
@@ -614,13 +624,11 @@
         document.getElementById('introOverlay').style.display = 'flex';
         document.getElementById('closeIntro').onclick = () => {
             document.getElementById('introOverlay').style.display = 'none';
-            // Скрываем селекторы через updateUI
             updateUI();
         };
     }
 
     function updateUI() {
-        // Скрываем/показываем селекторы в зависимости от состояния квеста
         const citySelector = document.getElementById('citySelector');
         const langBar = document.getElementById('langBar');
         if (currentCity && currentSteps.length > 0) {
@@ -704,7 +712,6 @@
     }
 
     function renderCurrentQuestion() {
-        // Скрываем/показываем селекторы (это уже делает updateUI, но дублируем для надёжности)
         const citySelector = document.getElementById('citySelector');
         const langBar = document.getElementById('langBar');
         if (currentCity && currentSteps.length > 0) {
@@ -852,6 +859,36 @@
         saveProgress();
     }
 
+    // ==================== ВЫХОД В ГЛАВНОЕ МЕНЮ ====================
+    function initExit() {
+        const exitBtn = document.getElementById('exitButton');
+        
+        exitBtn.onclick = function() {
+            if (confirm('Вы уверены, что хотите выйти в главное меню? Весь прогресс будет сохранён.')) {
+                currentCity = null;
+                currentSteps = [];
+                currentFacts = [];
+                currentIndex = 0;
+                scores = [];
+                attempts = [];
+                completed = [];
+                hintShown = [];
+                totalScore = 0;
+                
+                document.getElementById('citySelector').classList.remove('hidden');
+                document.getElementById('langBar').classList.remove('hidden');
+                document.getElementById('stepsContainer').innerHTML = '<div class="loading">🏙️ Выберите город из списка выше</div>';
+                document.getElementById('congrats').style.display = 'none';
+                
+                updateUI();
+                renderCitySelector();
+                
+                showMessage('🔙 Вы вернулись в главное меню');
+                localStorage.removeItem('quest_progress');
+            }
+        };
+    }
+
     // ==================== ИНИЦИАЛИЗАЦИЯ ЧАТА ====================
     function initChat() {
         const aiButton = document.getElementById('aiButton');
@@ -964,6 +1001,7 @@
         initChat();
         initFeedback();
         initDonate();
+        initExit();
         renderCitySelector();
 
         document.querySelectorAll('.lang-btn').forEach(btn => {
