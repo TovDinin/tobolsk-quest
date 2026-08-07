@@ -959,26 +959,18 @@
 
     // ==================== ИНИЦИАЛИЗАЦИЯ ДОНАТОВ ====================
     function initDonate() {
-        const donateBtn = document.getElementById('donateButton');
-        const donateModal = document.getElementById('donateModal');
-        const donateClose = document.getElementById('donateClose');
+    const donateBtn = document.getElementById('donateButton');
+    const donateModal = document.getElementById('donateModal');
+    const donateClose = document.getElementById('donateClose');
 
-        donateBtn.onclick = () => { donateModal.style.display = 'flex'; };
-        donateClose.onclick = () => { donateModal.style.display = 'none'; };
+    donateBtn.onclick = () => { donateModal.style.display = 'flex'; };
+    donateClose.onclick = () => { donateModal.style.display = 'none'; };
 
-        document.getElementById('donateBoosty').onclick = () => {
-            window.open(DONATE_URLS.boosty, '_blank');
-            donateModal.style.display = 'none';
-        };
-        document.getElementById('donateBuymeacoffee').onclick = () => {
-            window.open(DONATE_URLS.buymeacoffee, '_blank');
-            donateModal.style.display = 'none';
-        };
-        document.getElementById('donateTelegram').onclick = () => {
-            window.open(DONATE_URLS.telegram, '_blank');
-            donateModal.style.display = 'none';
-        };
-    }
+    document.getElementById('donateTelegram').onclick = () => {
+        window.open(DONATE_URLS.telegram, '_blank');
+        donateModal.style.display = 'none';
+    };
+}
 
     // ==================== ЗАПУСК ====================
     document.addEventListener('DOMContentLoaded', () => {
