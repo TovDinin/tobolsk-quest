@@ -521,9 +521,9 @@
 <div id="introOverlay" class="intro-overlay"><div class="intro-card" id="introCard"></div></div>
 
 <script>
-    // ==================== НАСТРОЙКИ ДОНАТОВ (ЗАМЕНИТЕ НА СВОИ ССЫЛКИ) ====================
+    // ==================== НАСТРОЙКИ ДОНАТОВ ====================
     const DONATE_URLS = {
-        telegram: 'https://t.me/Quest_supportbot?start=donate'
+        telegram: 'https://t.me/Questsupportpaybot?start=donate'
     };
 
     // ==================== ПЕРЕВОДЫ ИНТЕРФЕЙСА ====================
@@ -939,7 +939,7 @@
         feedbackClose.onclick = () => { feedbackModal.style.display = 'none'; };
 
         document.getElementById('feedbackTelegram').onclick = () => {
-            window.open('https://t.me/Quest_supportbot', '_blank');
+            window.open('https://t.me/Questsupportpaybot', '_blank');
             feedbackModal.style.display = 'none';
         };
         document.getElementById('feedbackEmailCopy').onclick = () => {
@@ -957,18 +957,18 @@
 
     // ==================== ИНИЦИАЛИЗАЦИЯ ДОНАТОВ ====================
     function initDonate() {
-    const donateBtn = document.getElementById('donateButton');
-    const donateModal = document.getElementById('donateModal');
-    const donateClose = document.getElementById('donateClose');
+        const donateBtn = document.getElementById('donateButton');
+        const donateModal = document.getElementById('donateModal');
+        const donateClose = document.getElementById('donateClose');
 
-    donateBtn.onclick = () => { donateModal.style.display = 'flex'; };
-    donateClose.onclick = () => { donateModal.style.display = 'none'; };
+        donateBtn.onclick = () => { donateModal.style.display = 'flex'; };
+        donateClose.onclick = () => { donateModal.style.display = 'none'; };
 
-    document.getElementById('donateTelegram').onclick = () => {
-        window.open(DONATE_URLS.telegram, '_blank');
-        donateModal.style.display = 'none';
-    };
-}
+        document.getElementById('donateTelegram').onclick = () => {
+            window.open(DONATE_URLS.telegram, '_blank');
+            donateModal.style.display = 'none';
+        };
+    }
 
     // ==================== ЗАПУСК ====================
     document.addEventListener('DOMContentLoaded', () => {
@@ -1014,6 +1014,18 @@
             document.getElementById('citySelector').classList.remove('hidden');
             document.getElementById('langBar').classList.remove('hidden');
         }
+    });
+
+    // ==================== ПОДВАЛ С ЮРИДИЧЕСКИМИ ССЫЛКАМИ ====================
+    // Добавляем подвал после загрузки страницы
+    document.addEventListener('DOMContentLoaded', function() {
+        const footer = document.createElement('div');
+        footer.style.cssText = 'text-align:center; font-size:12px; color:#888; margin-top:40px; border-top:1px solid #333; padding-top:20px;';
+        footer.innerHTML = `
+            <a href="/offer.html" style="color:#f9d976;">Публичная оферта</a> | 
+            <a href="/privacy.html" style="color:#f9d976;">Политика конфиденциальности</a>
+        `;
+        document.querySelector('.container').appendChild(footer);
     });
 
     // Service Worker registration
